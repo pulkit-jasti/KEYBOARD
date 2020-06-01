@@ -1,3 +1,9 @@
+//VARIABLES
+$height: 60px;
+$width: 70px;
+
+
+//GENERAL
 *{
   margin: 0;
   padding: 0;
@@ -10,23 +16,35 @@
   outline: none !important;
 }
 
+
+//MAIN
 body{
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.line{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: lightgreen;
+}
+
 .btn{
   position: relative;
+  margin-right: 10px;
 
   .key{
     position: absolute;
     top: -12px;
     left: 0;
     z-index: 5;
-    height: 70px;
-    width: 150px;
+    height: $height;
+    width: $width;
     background-color: lightblue;
     border: 2px solid #368aa7;
     border-radius: 10px;
@@ -42,8 +60,8 @@ body{
   .side{
     position: relative;
     z-index: 4;
-    height: 70px;
-    width: 150px;
+    height: $height;
+    width: $width;
     background-color: #5faec9;
     border: 2px solid #368aa7;
     border-radius: 10px;
@@ -55,8 +73,8 @@ body{
     top: 8px;
     left: 50%;
     transform: translateX(-50%);
-    height: 70px;
-    width: 145px;
+    height: $height;
+    width: $width - 5px;
     background-color: rgba(54, 139, 167, 0.4);
     border-radius: 10px;
     transition-duration: 100ms;
@@ -89,21 +107,10 @@ body{
   animation-fill-mode: forwards;
 }
 
-.shadow-pressed{
-  animation: shadow-press 200ms linear;
-  animation-fill-mode: forwards;
-}
-
 .key-released{
   animation: key-release 200ms linear;
   animation-fill-mode: forwards;
 }
-
-.shadow-released{
-  animation: shadow-release 200ms linear;
-  animation-fill-mode: forwards;
-}
-
 
 @keyframes key-press{
   /*50%{
@@ -112,21 +119,5 @@ body{
 
   100%{
     top: 0px;
-  }
-}
-
-@keyframes key-release{
-  /*50%{
-    top: 0px;
-  }*/
-
-  100%{
-    top: -12px;
-  }
-}
-
-@keyframes shadow-press{
-  100%{
-    
   }
 }
