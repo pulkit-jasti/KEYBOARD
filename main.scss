@@ -89,10 +89,21 @@ body{
   animation-fill-mode: forwards;
 }
 
+.shadow-pressed{
+  animation: shadow-press 200ms linear;
+  animation-fill-mode: forwards;
+}
+
 .key-released{
   animation: key-release 200ms linear;
   animation-fill-mode: forwards;
 }
+
+.shadow-released{
+  animation: shadow-release 200ms linear;
+  animation-fill-mode: forwards;
+}
+
 
 @keyframes key-press{
   /*50%{
@@ -111,5 +122,11 @@ body{
 
   100%{
     top: -12px;
+  }
+}
+
+@keyframes shadow-press{
+  100%{
+    
   }
 }

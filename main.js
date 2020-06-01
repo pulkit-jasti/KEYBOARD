@@ -1,8 +1,9 @@
 var keysdown = {};
 
-$a=$('.key-a');
-$d=$('.key-d');
-
+$ak=$('.key-a');
+$as=$('.shadow-a');
+$dk=$('.key-d');
+$ds=$('.shadow-d')
 // keydown handler
 $(document).keydown(function(e){
 
@@ -20,13 +21,15 @@ $(document).keydown(function(e){
     case 65: //left (a)
 
       console.log('pressed');
-      $($a).toggleClass('key-pressed');
+      $($ak).toggleClass('key-pressed');
+      $($as).toggleClass('key-pressed');
       break;
 
     case 68: //right (d)
 
       console.log('right');
-      $($d).toggleClass('key-pressed');
+      $($dk).toggleClass('key-pressed');
+      $($ds).toggleClass('key-pressed');
       break;
 
   }
@@ -37,10 +40,12 @@ document.addEventListener('keyup', event => {
   
   if(key=='a'){
     console.log("released")
-    $($a).toggleClass('key-pressed');
+    $($ak).toggleClass('key-pressed');
+    $($as).toggleClass('key-pressed');
   }
   else if(key=='d'){
-    $($d).toggleClass('key-pressed');
+    $($dk).toggleClass('key-pressed');
+    $($ds).toggleClass('key-pressed');
   }
 });
 

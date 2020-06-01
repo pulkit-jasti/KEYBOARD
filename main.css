@@ -103,9 +103,23 @@ body {
           animation-fill-mode: forwards;
 }
 
+.shadow-pressed {
+  -webkit-animation: shadow-press 200ms linear;
+          animation: shadow-press 200ms linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .key-released {
   -webkit-animation: key-release 200ms linear;
           animation: key-release 200ms linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.shadow-released {
+  -webkit-animation: shadow-release 200ms linear;
+          animation: shadow-release 200ms linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -143,6 +157,16 @@ body {
   }*/
   100% {
     top: -12px;
+  }
+}
+
+@-webkit-keyframes shadow-press {
+  100% {
+  }
+}
+
+@keyframes shadow-press {
+  100% {
   }
 }
 /*# sourceMappingURL=main.css.map */
