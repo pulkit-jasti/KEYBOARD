@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,*::after,*::before{
+  outline: none !important;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  position: relative;
+
+  .key{
+    position: absolute;
+    top: -12px;
+    left: 0;
+    z-index: 5;
+    height: 70px;
+    width: 150px;
+    background-color: lightblue;
+    border: 2px solid #368aa7;
+    border-radius: 10px;
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transition-property: all;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .side{
+    position: relative;
+    z-index: 4;
+    height: 70px;
+    width: 150px;
+    background-color: #5faec9;
+    border: 2px solid #368aa7;
+    border-radius: 10px;
+  }
+
+  .shadow{
+    position: absolute;
+    z-index: 3;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+    width: 145px;
+    background-color: rgba(54, 139, 167, 0.4);
+    border-radius: 10px;
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  }
+
+  &:hover{
+    cursor: pointer;
+
+    button{
+      top: -7px;
+    }
+
+    .shadow{
+      top: 6px;
+    }
+  }
+
+  &:active{
+    cursor: pointer;
+
+    button,.shadow{
+      top: 0;
+    }
+  }
+}
+
+.key-pressed{
+  animation: key-press 200ms linear;
+  animation-fill-mode: forwards;
+}
+
+.key-released{
+  animation: key-release 200ms linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes key-press{
+  /*50%{
+    top: 0px;
+  }*/
+
+  100%{
+    top: 0px;
+  }
+}
+
+@keyframes key-release{
+  /*50%{
+    top: 0px;
+  }*/
+
+  100%{
+    top: -12px;
+  }
+}

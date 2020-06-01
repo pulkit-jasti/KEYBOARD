@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *::after, *::before {
+  outline: none !important;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn .key {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  z-index: 5;
+  height: 70px;
+  width: 150px;
+  background-color: lightblue;
+  border: 2px solid #368aa7;
+  border-radius: 10px;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.btn .key:hover {
+  cursor: pointer;
+}
+
+.btn .side {
+  position: relative;
+  z-index: 4;
+  height: 70px;
+  width: 150px;
+  background-color: #5faec9;
+  border: 2px solid #368aa7;
+  border-radius: 10px;
+}
+
+.btn .shadow {
+  position: absolute;
+  z-index: 3;
+  top: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 70px;
+  width: 145px;
+  background-color: rgba(54, 139, 167, 0.4);
+  border-radius: 10px;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:hover button {
+  top: -7px;
+}
+
+.btn:hover .shadow {
+  top: 6px;
+}
+
+.btn:active {
+  cursor: pointer;
+}
+
+.btn:active button, .btn:active .shadow {
+  top: 0;
+}
+
+.key-pressed {
+  -webkit-animation: key-press 200ms linear;
+          animation: key-press 200ms linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.key-released {
+  -webkit-animation: key-release 200ms linear;
+          animation: key-release 200ms linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes key-press {
+  /*50%{
+    top: 0px;
+  }*/
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes key-press {
+  /*50%{
+    top: 0px;
+  }*/
+  100% {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes key-release {
+  /*50%{
+    top: 0px;
+  }*/
+  100% {
+    top: -12px;
+  }
+}
+
+@keyframes key-release {
+  /*50%{
+    top: 0px;
+  }*/
+  100% {
+    top: -12px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
