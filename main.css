@@ -11,46 +11,38 @@
 }
 
 body {
+  position: relative;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.line {
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
+  background-color: lightcoral;
 }
 
-.line-2 {
+body .container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: lightsalmon;
+}
+
+body .container .line {
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: lightgreen;
+}
+
+.btn-space {
+  margin: 0 auto;
 }
 
 .btn {
   position: relative;
-  margin-right: 10px;
 }
 
 .btn .key {
@@ -58,8 +50,8 @@ body {
   top: -12px;
   left: 0;
   z-index: 5;
-  height: 60px;
-  width: 70px;
+  height: 4vw;
+  width: 5vw;
   background-color: lightblue;
   border: 2px solid #368aa7;
   border-radius: 10px;
@@ -78,8 +70,8 @@ body {
 .btn .side {
   position: relative;
   z-index: 4;
-  height: 60px;
-  width: 70px;
+  height: 4vw;
+  width: 5vw;
   background-color: #5faec9;
   border: 2px solid #368aa7;
   border-radius: 10px;
@@ -92,8 +84,8 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 60px;
-  width: 65px;
+  height: 4vw;
+  width: 4vw;
   background-color: rgba(54, 139, 167, 0.4);
   border-radius: 10px;
   -webkit-transition-duration: 100ms;

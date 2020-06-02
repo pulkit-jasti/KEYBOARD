@@ -1,6 +1,6 @@
 //VARIABLES
-$height: 60px;
-$width: 70px;
+$height: 4vw;
+$width: 5vw;
 
 
 //GENERAL
@@ -19,29 +19,37 @@ $width: 70px;
 
 //MAIN
 body{
+  position: relative;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.line{
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
   width: 100%;
-  //background-color: lightgreen;
+  background-color: lightcoral;
+
+  .container{
+    position: absolute;
+    //left: 0;
+    bottom: 0;
+    //height: 50%;
+    width: 100%;
+    background-color: lightsalmon;
+
+    .line{
+      margin: 0 auto;
+      width: 70%;
+      margin-bottom: 2vw;
+      display: flex;
+      justify-content: space-between;
+      background-color: lightgreen;
+    }
+  }
 }
 
-.line-2{
-  display: flex;
-  flex-direction: column-reverse;
+.btn-space{
+  margin: 0 auto;
 }
 
 .btn{
   position: relative;
-  margin-right: 10px;
+  //margin-right: 10px;
 
   .key{
     position: absolute;
@@ -79,7 +87,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     height: $height;
-    width: $width - 5px;
+    width: $width - 1;
     background-color: rgba(54, 139, 167, 0.4);
     border-radius: 10px;
     transition-duration: 100ms;
