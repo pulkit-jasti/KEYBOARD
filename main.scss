@@ -31,7 +31,12 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: lightgreen;
+  //background-color: lightgreen;
+}
+
+.line-2{
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .btn{
