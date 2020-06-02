@@ -1,0 +1,98 @@
+//VARIABLES
+
+$tab-width:8vw;
+$bck-width:9vw;
+$caps-width:10vw;
+$enter-width:10vw;
+$shift-width: 13vw;
+$space-width: 30vw;
+
+.btn{
+
+    .key-shift{
+        width: $shift-width;
+        background-color: lightgreen;
+    }
+
+    .side-shift{
+        width: $shift-width;
+    }
+
+    .shadow-shift{
+        width: $shift-width - 1;
+    }
+
+
+
+    .key-tab{
+        width: $tab-width;
+        background-color: lightgreen;
+    }
+
+    .side-tab{
+        width: $tab-width;
+    }
+
+    .shadow-tab{
+        width: $tab-width - 1;
+    }
+
+
+
+    .key-bck{
+        width: $bck-width;
+        background-color: lightgreen;
+    }
+
+    .side-bck{
+        width: $bck-width;
+    }
+
+    .shadow-bck{
+        width: $bck-width - 1;
+    }
+
+
+    .key-caps{
+        width: $caps-width;
+        background-color: lightgreen;
+    }
+
+    .side-caps{
+        width: $caps-width;
+    }
+
+    .shadow-caps{
+        width: $caps-width - 1;
+    }
+
+
+
+    .key-enter{
+        width: $enter-width;
+        background-color: lightgreen;
+    }
+
+    .side-enter{
+        width: $enter-width;
+    }
+
+    .shadow-enter{
+        width: $enter-width - 1;
+    }
+
+
+
+    .key-space{
+        width: $space-width;
+        background-color: lightgreen;
+    }
+
+    .side-space{
+        width: $space-width;
+    }
+
+    .shadow-space{
+        width: $space-width - 1;
+    }
+}

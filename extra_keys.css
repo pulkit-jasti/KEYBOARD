@@ -1,0 +1,78 @@
+.btn .key-shift {
+  width: 13vw;
+  background-color: lightgreen;
+}
+
+.btn .side-shift {
+  width: 13vw;
+}
+
+.btn .shadow-shift {
+  width: 12vw;
+}
+
+.btn .key-tab {
+  width: 8vw;
+  background-color: lightgreen;
+}
+
+.btn .side-tab {
+  width: 8vw;
+}
+
+.btn .shadow-tab {
+  width: 7vw;
+}
+
+.btn .key-bck {
+  width: 9vw;
+  background-color: lightgreen;
+}
+
+.btn .side-bck {
+  width: 9vw;
+}
+
+.btn .shadow-bck {
+  width: 8vw;
+}
+
+.btn .key-caps {
+  width: 10vw;
+  background-color: lightgreen;
+}
+
+.btn .side-caps {
+  width: 10vw;
+}
+
+.btn .shadow-caps {
+  width: 9vw;
+}
+
+.btn .key-enter {
+  width: 10vw;
+  background-color: lightgreen;
+}
+
+.btn .side-enter {
+  width: 10vw;
+}
+
+.btn .shadow-enter {
+  width: 9vw;
+}
+
+.btn .key-space {
+  width: 30vw;
+  background-color: lightgreen;
+}
+
+.btn .side-space {
+  width: 30vw;
+}
+
+.btn .shadow-space {
+  width: 29vw;
+}
+/*# sourceMappingURL=extra_keys.css.map */

@@ -1,11 +1,9 @@
 var keysdown = {};
 
-$ak=$('.key-a');
-$as=$('.shadow-a');
-$dk=$('.key-d');
-$ds=$('.shadow-d');
 
 
+$tabk=$('.key-tab');
+$tabs=$('.shadow-tab');
 
 $qk=$('.key-q');
 $qs=$('.shadow-q');
@@ -37,9 +35,13 @@ $os=$('.shadow-o');
 $pk=$('.key-p');
 $ps=$('.shadow-p');
 
+$bckk=$('.key-bck');
+$bcks=$('.shadow-bck');
 
 
 
+$capsk=$('.key-caps');
+$capss=$('.shadow-caps');
 
 $ak=$('.key-a');
 $as=$('.shadow-a');
@@ -68,12 +70,19 @@ $ks=$('.shadow-k');
 $lk=$('.key-l');
 $ls=$('.shadow-l');
 
+$enterk=$('.key-enter');
+$enters=$('.shadow-enter');
 
 
 
 
-$zk=$('.key-z');
-$zs=$('.shadow-z');
+
+
+$shiftk=$('.key-shift');
+$shifts=$('.shadow-shift');
+
+$spacek=$('.key-space');
+$spaces=$('.shadow-space');
 
 $xk=$('.key-x');
 $xs=$('.shadow-x');
@@ -93,6 +102,8 @@ $ns=$('.shadow-n');
 $mk=$('.key-m');
 $ms=$('.shadow-m');
 
+$quk=$('.key-qu');
+$qus=$('.shadow-qu');
 
 
 
@@ -106,12 +117,47 @@ $(document).keydown(function(e){
       return;
   }
 
-  // Remember it's down
   keysdown[e.keyCode] = true;
 
-  console.log(e.keyCode)
-  // Do our thing
+  console.log(e.keyCode);
+
+
   switch(e.keyCode){
+
+    case 32:
+      $($spacek).toggleClass('key-pressed');
+      $($spaces).toggleClass('key-pressed');
+      break;
+
+    case 16:
+      $($shiftk).toggleClass('key-pressed');
+      $($shifts).toggleClass('key-pressed');
+      break;
+
+    case 20:
+      $($capsk).toggleClass('key-pressed');
+      $($capss).toggleClass('key-pressed');
+      break;
+
+    case 13:
+      $($enterk).toggleClass('key-pressed');
+      $($enters).toggleClass('key-pressed');
+      break;
+
+    case 9:
+      $($tabk).toggleClass('key-pressed');
+      $($tabs).toggleClass('key-pressed');
+      break;
+
+    case 8:
+      $($bckk).toggleClass('key-pressed');
+      $($bcks).toggleClass('key-pressed');
+      break;
+
+
+
+
+
 
     case 81:
       $($qk).toggleClass('key-pressed');
@@ -215,6 +261,8 @@ $(document).keydown(function(e){
 
 
 
+
+
     case 90:
       $($zk).toggleClass('key-pressed');
       $($zs).toggleClass('key-pressed');
@@ -249,11 +297,25 @@ $(document).keydown(function(e){
       $($mk).toggleClass('key-pressed');
       $($ms).toggleClass('key-pressed');
       break;
+
+    case 191:
+      $($quk).toggleClass('key-pressed');
+      $($qus).toggleClass('key-pressed');
+      break;
   }
 });
 
+
+
+
+
+
+//KEY RELEASE CHECK
+
+
 document.addEventListener('keyup', event => {
   const key = event.key.toLowerCase();
+  console.log(key);
   
   switch(key){
 
@@ -393,6 +455,38 @@ document.addEventListener('keyup', event => {
       $($mk).toggleClass('key-pressed');
       $($ms).toggleClass('key-pressed');
       break;
+
+    case '/':
+      $($quk).toggleClass('key-pressed');
+      $($qus).toggleClass('key-pressed');
+      break;
+
+    case ' ':
+      $($spacek).toggleClass('key-pressed');
+      $($spaces).toggleClass('key-pressed');
+      break;
+
+    default:
+      if(key=="tab"){
+        $($tabk).toggleClass('key-pressed');
+        $($tabs).toggleClass('key-pressed');
+      }
+      else if(key=="backspace"){
+        $($bckk).toggleClass('key-pressed');
+        $($bcks).toggleClass('key-pressed');
+      }
+      else if(key=="capslock"){
+        $($capsk).toggleClass('key-pressed');
+        $($capss).toggleClass('key-pressed');
+      }
+      else if(key=="enter"){
+        $($enterk).toggleClass('key-pressed');
+        $($enters).toggleClass('key-pressed');
+      }
+      else if(key=="shift"){
+        $($shiftk).toggleClass('key-pressed');
+        $($shifts).toggleClass('key-pressed');
+      }
   }
 });
 
