@@ -1,0 +1,1 @@
+try using inner html and span tag instead of input box, to avoide clicking on th einput box after clicking on a key on screen everytime
