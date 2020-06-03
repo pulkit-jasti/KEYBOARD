@@ -1,0 +1,1 @@
+function input(letter) {document.getElementById("main-input").value += letter;}
