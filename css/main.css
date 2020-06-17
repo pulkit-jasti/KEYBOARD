@@ -215,6 +215,11 @@ body .container .line {
   padding: 20px;
   text-align: center;
   font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+#mobile-incompatible .text-wrapper p span {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1000px) {
