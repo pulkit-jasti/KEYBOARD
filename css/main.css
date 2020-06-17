@@ -11,7 +11,7 @@
   outline: none !important;
 }
 
-body {
+body main {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -189,6 +189,40 @@ body .container .line {
 @keyframes key-press {
   100% {
     top: 0px;
+  }
+}
+
+#mobile-incompatible {
+  display: none;
+}
+
+#mobile-incompatible .text-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #F7DC6F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mobile-incompatible .text-wrapper p {
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    display: none;
+  }
+  #mobile-incompatible {
+    display: unset;
   }
 }
 /*# sourceMappingURL=main.css.map */

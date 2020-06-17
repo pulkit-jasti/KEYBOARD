@@ -23,10 +23,14 @@ $width: 5vw;
 
 //MAIN
 body{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: #F7DC6F;
+  
+
+  main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #F7DC6F;
+  }
 
   #instructions-wrapper{
     width: 100%;
@@ -178,5 +182,40 @@ body{
 @keyframes key-press{
   100%{
     top: 0px;
+  }
+}
+
+
+
+
+//MOBILE INCOMPATIBLE
+
+#mobile-incompatible{
+  display: none;
+
+  .text-wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: #F7DC6F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}
+
+
+@media screen and (max-width:1000px){
+  main{
+    display: none;
+  }
+
+  #mobile-incompatible{
+    display: unset;
   }
 }
