@@ -15,7 +15,7 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: lightcoral;
+  background-color: #353535;
 }
 
 body #main-input {
@@ -31,14 +31,14 @@ body #main-input {
   padding: 0 20px;
   font-size: 1.3rem;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.3);
+  color: #353535;
+  background-color: #f8f8f8;
 }
 
 body .container {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: lightsalmon;
 }
 
 body .container .line {
@@ -51,7 +51,6 @@ body .container .line {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: lightgreen;
 }
 
 .btn-space {
@@ -72,6 +71,7 @@ body .container .line {
   background-color: lightblue;
   border: 2px solid #368aa7;
   border-radius: 10px;
+  font-size: 1rempx;
   -webkit-transition-duration: 100ms;
           transition-duration: 100ms;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);

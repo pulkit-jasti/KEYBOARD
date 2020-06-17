@@ -24,7 +24,7 @@ body{
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: lightcoral;
+  background-color: rgb(53, 53, 53);
 
   #main-input{
     position: relative;
@@ -38,7 +38,8 @@ body{
     padding: 0 20px;
     font-size: 1.3rem;
     font-weight: 700;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgb(53, 53, 53);
+    background-color: #f8f8f8;
   }
 
   .container{
@@ -47,7 +48,7 @@ body{
     bottom: 0;
     //height: 50%;
     width: 100%;
-    background-color: lightsalmon;
+    //background-color: lightsalmon;
 
     .line{
       margin: 0 auto;
@@ -55,7 +56,7 @@ body{
       margin-bottom: 2vw;
       display: flex;
       justify-content: space-between;
-      background-color: lightgreen;
+      //background-color: lightgreen;
     }
   }
 }
@@ -78,6 +79,7 @@ body{
     background-color: lightblue;
     border: 2px solid #368aa7;
     border-radius: 10px;
+    font-size: 1rempx;
     transition-duration: 100ms;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     transition-property: all;
