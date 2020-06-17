@@ -34,7 +34,7 @@ body{
 
   #instructions-wrapper{
     width: 100%;
-    padding: 80px 0 40px 0;
+    padding: 4vw 0 40px 0;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -216,6 +216,16 @@ body{
 
 
 @media screen and (max-width:1000px){
+  main{
+    display: none;
+  }
+
+  #mobile-incompatible{
+    display: unset;
+  }
+}
+
+@media screen and (max-height:500px){
   main{
     display: none;
   }
