@@ -12,6 +12,8 @@ $width: 5vw;
 
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif !important;
+
+  //border: none !important;
 }
 
 *,*::after,*::before{
@@ -24,31 +26,58 @@ body{
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: rgb(53, 53, 53);
+  background-color: #F7DC6F;
 
-  #main-input{
+  #instructions-wrapper{
+    width: 100%;
+    padding: 80px 0 40px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    #instructions{
+      font-size: 2rem;
+      
+      span{
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  #input{
+    width: 100%;
     position: relative;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    height: 60px;
-    width: 500px;
-    border: none;
-    border-radius: 10px;
-    padding: 0 20px;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: rgb(53, 53, 53);
-    background-color: #f8f8f8;
+
+    *{
+      border-radius: 10px;
+      height: 60px;
+      width: 500px;
+      border: 2px solid rgb(209, 43, 24);
+    }
+
+    input{
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0 20px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+      background-color: rgb(236, 112, 99);
+    }
+
+    .side{
+      margin: 0 auto;
+      background-color: rgb(231, 76, 60 );
+    }
   }
 
   .container{
     position: absolute;
-    //left: 0;
-    bottom: 0;
-    //height: 50%;
+    bottom: 3%;
     width: 100%;
-    //background-color: lightsalmon;
 
     .line{
       margin: 0 auto;
@@ -56,7 +85,6 @@ body{
       margin-bottom: 2vw;
       display: flex;
       justify-content: space-between;
-      //background-color: lightgreen;
     }
   }
 }
@@ -67,7 +95,6 @@ body{
 
 .btn{
   position: relative;
-  //margin-right: 10px;
 
   .key{
     position: absolute;
@@ -76,10 +103,14 @@ body{
     z-index: 5;
     height: $height;
     width: $width;
+    
     background-color: lightblue;
     border: 2px solid #368aa7;
     border-radius: 10px;
-    font-size: 1rempx;
+
+    font-size: 1rem;
+    font-weight: 700;
+
     transition-duration: 100ms;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     transition-property: all;
@@ -145,10 +176,6 @@ body{
 }
 
 @keyframes key-press{
-  /*50%{
-    top: 0px;
-  }*/
-
   100%{
     top: 0px;
   }

@@ -7,92 +7,152 @@ $enter-width:10vw;
 $shift-width: 13vw;
 $space-width: 30vw;
 
+
+
+//EXTRA KEY COLOURS
+
+/*
+$extkey-backbround:rgb(187, 143, 206);
+$extkey-side: rgb(165, 105, 189);
+$extkey-shadow:rgba(165, 105, 189, 0.4);
+$extkey-border:rgb(125, 56, 153);
+*/
+
+$extkey-backbround:rgb(130, 224, 170);
+$extkey-side: rgb(88, 214, 141);
+$extkey-shadow:rgba(88, 214, 141, 0.4);
+$extkey-border:rgb(42, 180, 100);
+
+
+
+//SPACE KEY COLOUR
+
+/*
+$space-background: rgb(247, 220, 111);
+$space-side:rgb(244, 208, 63);
+$space-shadow:rgba(244, 208, 63, 0.4);
+$space-border:rgb(218, 178, 22);
+*/
+
+$space-background: rgb(187, 143, 206);
+$space-side:rgb(165, 105, 189);
+$space-shadow:rgba(165, 105, 189, 0.4);
+$space-border:rgb(125, 56, 153);
+
+
+
+
+
 .btn{
 
     .key-shift{
         width: $shift-width;
-        background-color: lightgreen;
+        background-color: $extkey-backbround;
+        border-color: $extkey-border;
     }
 
     .side-shift{
         width: $shift-width;
+        background-color: $extkey-side;
+        border-color: $extkey-border;
     }
 
     .shadow-shift{
         width: $shift-width - 1;
+        background-color: $extkey-shadow;
     }
 
 
 
     .key-tab{
         width: $tab-width;
-        background-color: lightgreen;
+        background-color: $extkey-backbround;
+        border-color: $extkey-border;
     }
 
     .side-tab{
         width: $tab-width;
+        background-color: $extkey-side;
+        border-color: $extkey-border;
     }
 
     .shadow-tab{
         width: $tab-width - 1;
+        background-color: $extkey-shadow;
     }
 
 
 
     .key-bck{
         width: $bck-width;
-        background-color: lightgreen;
+        background-color: $extkey-backbround;
+        border-color: $extkey-border;
     }
 
     .side-bck{
         width: $bck-width;
+        background-color: $extkey-side;
+        border-color: $extkey-border;
     }
 
     .shadow-bck{
         width: $bck-width - 1;
+        background-color: $extkey-shadow;
     }
 
 
     .key-caps{
         width: $caps-width;
-        background-color: lightgreen;
+        background-color: $extkey-backbround;
+        border-color: $extkey-border;
     }
 
     .side-caps{
         width: $caps-width;
+        background-color: $extkey-side;
+        border-color: $extkey-border;
     }
 
     .shadow-caps{
         width: $caps-width - 1;
+        background-color: $extkey-shadow;
     }
 
 
 
     .key-enter{
         width: $enter-width;
-        background-color: lightgreen;
+        background-color: $extkey-backbround;
+        border-color: $extkey-border;
     }
 
     .side-enter{
         width: $enter-width;
+        background-color: $extkey-side;
+        border-color: $extkey-border;
     }
 
     .shadow-enter{
         width: $enter-width - 1;
+        background-color: $extkey-shadow;
     }
 
 
 
     .key-space{
         width: $space-width;
-        background-color: lightgreen;
+        background-color: $space-background;
+        border-color: $space-border;
     }
 
     .side-space{
         width: $space-width;
+        background-color: $space-side;
+        border-color: $space-border;
     }
 
     .shadow-space{
         width: $space-width - 1;
+        background-color: $space-shadow;
     }
 }

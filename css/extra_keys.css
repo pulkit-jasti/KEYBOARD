@@ -1,78 +1,114 @@
+/*
+$extkey-backbround:rgb(187, 143, 206);
+$extkey-side: rgb(165, 105, 189);
+$extkey-shadow:rgba(165, 105, 189, 0.4);
+$extkey-border:rgb(125, 56, 153);
+*/
+/*
+$space-background: rgb(247, 220, 111);
+$space-side:rgb(244, 208, 63);
+$space-shadow:rgba(244, 208, 63, 0.4);
+$space-border:rgb(218, 178, 22);
+*/
 .btn .key-shift {
   width: 13vw;
-  background-color: lightgreen;
+  background-color: #82e0aa;
+  border-color: #2ab464;
 }
 
 .btn .side-shift {
   width: 13vw;
+  background-color: #58d68d;
+  border-color: #2ab464;
 }
 
 .btn .shadow-shift {
   width: 12vw;
+  background-color: rgba(88, 214, 141, 0.4);
 }
 
 .btn .key-tab {
   width: 8vw;
-  background-color: lightgreen;
+  background-color: #82e0aa;
+  border-color: #2ab464;
 }
 
 .btn .side-tab {
   width: 8vw;
+  background-color: #58d68d;
+  border-color: #2ab464;
 }
 
 .btn .shadow-tab {
   width: 7vw;
+  background-color: rgba(88, 214, 141, 0.4);
 }
 
 .btn .key-bck {
   width: 9vw;
-  background-color: lightgreen;
+  background-color: #82e0aa;
+  border-color: #2ab464;
 }
 
 .btn .side-bck {
   width: 9vw;
+  background-color: #58d68d;
+  border-color: #2ab464;
 }
 
 .btn .shadow-bck {
   width: 8vw;
+  background-color: rgba(88, 214, 141, 0.4);
 }
 
 .btn .key-caps {
   width: 10vw;
-  background-color: lightgreen;
+  background-color: #82e0aa;
+  border-color: #2ab464;
 }
 
 .btn .side-caps {
   width: 10vw;
+  background-color: #58d68d;
+  border-color: #2ab464;
 }
 
 .btn .shadow-caps {
   width: 9vw;
+  background-color: rgba(88, 214, 141, 0.4);
 }
 
 .btn .key-enter {
   width: 10vw;
-  background-color: lightgreen;
+  background-color: #82e0aa;
+  border-color: #2ab464;
 }
 
 .btn .side-enter {
   width: 10vw;
+  background-color: #58d68d;
+  border-color: #2ab464;
 }
 
 .btn .shadow-enter {
   width: 9vw;
+  background-color: rgba(88, 214, 141, 0.4);
 }
 
 .btn .key-space {
   width: 30vw;
-  background-color: lightgreen;
+  background-color: #bb8fce;
+  border-color: #7d3899;
 }
 
 .btn .side-space {
   width: 30vw;
+  background-color: #a569bd;
+  border-color: #7d3899;
 }
 
 .btn .shadow-space {
   width: 29vw;
+  background-color: rgba(165, 105, 189, 0.4);
 }
 /*# sourceMappingURL=extra_keys.css.map */

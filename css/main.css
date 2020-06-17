@@ -15,29 +15,63 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #353535;
+  background-color: #F7DC6F;
 }
 
-body #main-input {
+body #instructions-wrapper {
+  width: 100%;
+  padding: 80px 0 40px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #instructions-wrapper #instructions {
+  font-size: 2rem;
+}
+
+body #instructions-wrapper #instructions span {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+body #input {
+  width: 100%;
   position: relative;
-  left: 50%;
-  top: 20%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+}
+
+body #input * {
+  border-radius: 10px;
   height: 60px;
   width: 500px;
-  border: none;
-  border-radius: 10px;
+  border: 2px solid #d12b18;
+}
+
+body #input input {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   padding: 0 20px;
   font-size: 1.3rem;
   font-weight: 700;
-  color: #353535;
-  background-color: #f8f8f8;
+  color: white;
+  background-color: #ec7063;
+}
+
+body #input .side {
+  margin: 0 auto;
+  background-color: #e74c3c;
 }
 
 body .container {
   position: absolute;
-  bottom: 0;
+  bottom: 3%;
   width: 100%;
 }
 
@@ -71,7 +105,8 @@ body .container .line {
   background-color: lightblue;
   border: 2px solid #368aa7;
   border-radius: 10px;
-  font-size: 1rempx;
+  font-size: 1rem;
+  font-weight: 700;
   -webkit-transition-duration: 100ms;
           transition-duration: 100ms;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
@@ -146,18 +181,12 @@ body .container .line {
 }
 
 @-webkit-keyframes key-press {
-  /*50%{
-    top: 0px;
-  }*/
   100% {
     top: 0px;
   }
 }
 
 @keyframes key-press {
-  /*50%{
-    top: 0px;
-  }*/
   100% {
     top: 0px;
   }

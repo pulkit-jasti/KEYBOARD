@@ -1,1 +1,1 @@
-function input(letter) {document.getElementById("main-input").value += letter;}
+function input(letter) {document.getElementById("inp").value += letter;}
