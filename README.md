@@ -4,8 +4,8 @@ Completely useless piece of code that is just too satisfying to delete
 ## Live URL: https://pulkit-jasti.github.io/KEYBOARD/
 
 
-Inspiration: https://dribbble.com/shots/6276517-Hello
+## Inspiration: https://dribbble.com/shots/6276517-Hello
 
-Technologies Used:
+###Technologies Used:
 1. SCSS
 2. JQuery
